@@ -1,0 +1,73 @@
+site_name: Understanding EI
+site_description: Plain-language educational explanations of publicly available Employment Insurance information in Canada.
+site_url: https://jacfogel.github.io/Understanding-EI/
+repo_name: jacfogel/Understanding-EI
+repo_url: https://github.com/jacfogel/Understanding-EI
+edit_uri: edit/main/docs/
+
+copyright: "Unofficial educational project. Not affiliated with the Government of Canada."
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - toc.follow
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: indigo
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  generator: false
+
+nav:
+  - Home: index.md
+  - Start Here: start-here.md
+  - Concepts:
+      - What EI Is: topics/what-ei-is.md
+      - What EI Cares About and Why: topics/what-ei-cares-about.md
+      - Job Separation: topics/job-separation.md
+      - Voluntary Leaving: topics/voluntary-leaving.md
+      - Misconduct: topics/misconduct.md
+      - Availability for Work: topics/availability.md
+      - Training / Schooling: topics/training-schooling.md
+      - Earnings While on Claim: topics/earnings.md
+  - Process:
+      - Reconsideration: process/reconsideration.md
+      - Appeals / Tribunal: process/appeals-tribunal.md
+  - Reference:
+      - Official Sources: reference/official-sources.md
+      - Glossary: reference/glossary.md
+  - About / Disclaimer: about-disclaimer.md
+  - Project Notes:
+      - Visual Assets Plan: assets/README.md
