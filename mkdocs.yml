@@ -1,8 +1,8 @@
 site_name: Understanding EI
 site_description: Plain-language educational explanations of publicly available Employment Insurance information in Canada.
-site_url: https://your-username.github.io/understanding-ei/
-repo_name: your-username/understanding-ei
-repo_url: https://github.com/your-username/understanding-ei
+site_url: https://jacfogel.github.io/Understanding-EI/
+repo_name: jacfogel/Understanding-EI
+repo_url: https://github.com/jacfogel/Understanding-EI
 edit_uri: edit/main/docs/
 
 copyright: "Unofficial educational project. Not affiliated with the Government of Canada."

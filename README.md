@@ -33,6 +33,32 @@ This repository includes a GitHub Actions workflow at `.github/workflows/deploy.
 2. In GitHub, ensure **Settings → Pages → Build and deployment** is set to **GitHub Actions**
 3. The workflow builds and publishes the `site/` output automatically
 
+## Enable GitHub Pages (step-by-step)
+
+I can’t directly click your GitHub settings from this environment, so I can’t enable Pages on your account for you. I **did** set up the deploy workflow so once Pages is enabled, deploys are automatic.
+
+### In GitHub UI
+
+1. Open your repository: `https://github.com/jacfogel/Understanding-EI`
+2. Go to **Settings** → **Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Save.
+5. Push to `main` (or re-run the deploy workflow from **Actions**).
+6. Wait for the workflow **Deploy MkDocs to GitHub Pages** to complete.
+7. Your site URL will be: `https://jacfogel.github.io/Understanding-EI/`
+
+### Optional: using GitHub CLI (PowerShell)
+
+```powershell
+gh repo edit jacfogel/Understanding-EI --enable-pages --pages-source-build-type workflow
+```
+
+If that command errors, update GitHub CLI and ensure you are logged in:
+
+```powershell
+gh auth login
+```
+
 ## Where to edit content
 
 - Site configuration: `mkdocs.yml`
